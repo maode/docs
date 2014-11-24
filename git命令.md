@@ -7,7 +7,7 @@ git config --global user.email "your_email@example.com"
 git config user.name[user.email]
 #查看所有配置项
 git config -l[--list]
-#克隆项目到本地
+#克隆项目到本地[将项目拉到本地]
 git clone https://github.com/gavincook/test.git
 #将所有的改动加入缓存区
 git add .
@@ -21,11 +21,17 @@ git pull
 
 #================================================================================================
 #创建一个新的[本地]资源库,并推送到https://github.com/maode/workInfo.git
-#在本地创建"README.md"文件
+
+
+#1.在本地创建"README.md"文件
 touch README.md
-#初始化资源库
+#2.初始化资源库
 git init
+#3.添加文件到版本库
 git add README.md
+#4.提交更改到本地版本库
 git commit -m "first commit"
+#5.设置远程版本库地址
 git remote add origin https://github.com/maode/workInfo.git
+#6.推送到远程版本库
 git push -u origin master
