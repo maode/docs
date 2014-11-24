@@ -25,7 +25,7 @@ git pull
 
 #1.在本地创建"README.md"文件
 touch README.md
-#2.初始化资源库
+#2.初始化资源库【初始化一个本地未加入版本控制的现有的项目】
 git init
 #3.添加文件到版本库
 git add README.md
