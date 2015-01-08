@@ -13,7 +13,7 @@ git clone https://github.com/gavincook/test.git
 git add .
 #将改动提交到本地仓库[提交时添加-a可省略前一步加入缓存区的操作]
 git commit [-a] -m "备注信息"
-#将代码提交到远程服务器
+#将代码提交到远程服务器[实际含义是：将本地master推送到服务器origin]
 git push origin master
 #更新
 git pull
