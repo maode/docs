@@ -13,8 +13,18 @@ git clone https://github.com/gavincook/test.git
 git add .
 #将改动提交到本地仓库[提交时添加-a可省略前一步加入缓存区的操作]
 git commit [-a] -m "备注信息"
-#将代码提交到远程服务器[实际含义是：将本地master推送到服务器origin]
+
+
+#将本地的master分支推送到origin主机的master分支。此处省略了origin主机的分支名，如果后者不存在，则会被新建。
 git push origin master
+#[如果当前分支与远程分支存在追踪关系，则可以省略来源地分支名和目的地分支名都可以省略。如下：]
+git push origin	#将当前分支推送到origin主机的对应分支
+#[如果当前分支只有一个追踪分支，那么主机名也可以省略。如下：]
+git push	#将当前分支推送到唯一对应的远程分支
+#[如果当前分支与多个主机存在追踪关系，则可以使用-u选项指定一个默认主机，这样后面就可以不加任何参数使用git push]
+git push -u origin master
+
+
 #更新
 git pull
 
